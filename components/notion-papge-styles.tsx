@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { css, darken, Theme } from '@mui/material'
+import { css, darken, Theme } from "@mui/material";
 
 export function getNotionStyleOverides(theme: Theme) {
   return css`
@@ -47,7 +47,7 @@ export function getNotionStyleOverides(theme: Theme) {
       width: 100%;
       .notion-nav-header .breadcrumbs {
         /* width: 100%; */
-        overflow-x: scroll;
+        overflow-x: auto;
       }
       .notion-search-button {
         @media only screen and (max-width: 800px) {
@@ -163,5 +163,5 @@ export function getNotionStyleOverides(theme: Theme) {
     .notion-external-block {
       border: 1px solid ${theme.palette.divider};
     }
-  `
+  `;
 }
